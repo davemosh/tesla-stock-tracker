@@ -4,14 +4,14 @@ import smtplib
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 #stockapikey
-API_KEY = "C4OE9RU7YWAYVNEC"
+API_KEY = "YOUR OWN STOCK API KEY"
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-NEWS_API = "75c917e7c9c74e4a93cc5e893e9b6431"
+NEWS_API = "YOUR OWN NEWS API KEY"
 
-my_email = "davidmoshe110@gmail.com"
-my_password = "D@vidM0She@_27"
+my_email = "YOUR OWN EMAIL"
+my_password = "YOUR OWN PASSWORD"
 
     ## STEP 1: Use https://www.alphavantage.co/documentation/#daily
 # When stock price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
@@ -71,7 +71,7 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()
     connection.login(user=my_email, password=my_password)
     connection.sendmail(
-        from_address = my_email, to_address="moshedavid27@yahoo.com",
+        from_address = my_email, to_address="DESTINED EMAIL ADDRESS",
         msg=formated_articles
         )
 
